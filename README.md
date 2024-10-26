@@ -103,7 +103,11 @@ Deberías ver una respuesta JSON similar a esta:
 
 ### Estructura del Directorio del Proyecto
 Crea una carpeta para tu proyecto, por ejemplo, `couchdb_project`. Dentro de esta carpeta, crea la siguiente estructura:
-couchdb_project/ ├── db.php ├── index.php └── styles.css
+
+couchdb_project/ 
+├── db.php 
+├── index.php 
+└── styles.css
 
 ### Configuración de CouchDB
 
@@ -114,7 +118,7 @@ define('COUCHDB_DB', 'apaza-couch'); // Nombre de la base de datos
 define('COUCHDB_USER', 'admin'); // Nombre de usuario
 define('COUCHDB_PASSWORD', '1234'); // Contraseña
 
-
+```
 ### Función para Hacer Solicitudes HTTP con Autenticación
 
 ```php
@@ -136,7 +140,7 @@ function couchdb_request($method, $url, $data = null) {
 
     return ['body' => json_decode($response, true), 'code' => $code];
 }
-
+```
 ### Crear una Tarea para un Usuario
 ```php
 function create_task($user_id, $title, $description) {
