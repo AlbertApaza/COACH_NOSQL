@@ -151,7 +151,7 @@ function create_task($user_id, $title, $description) {
     $task_id = strtolower($user_id . '_' . str_replace(' ', '_', $title));
     return couchdb_request('PUT', "http://" . COUCHDB_HOST . ":" . COUCHDB_PORT . "/" . COUCHDB_DB . "/" . $task_id, $document);
 }
-
+```
 ### Recuperar Todas las Tareas y Usuarios
 ```php
 
@@ -159,5 +159,6 @@ function get_all_users_tasks() {
     $url = "http://" . COUCHDB_HOST . ":" . COUCHDB_PORT . "/" . COUCHDB_DB . "/_all_docs?include_docs=true";
     return couchdb_request('GET', $url);
 }
+```
 ### resultado
 ![Crear Usuario y Contraseña](assets/5.png)
