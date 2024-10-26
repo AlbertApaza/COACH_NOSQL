@@ -29,7 +29,7 @@ Si deseas trabajar en el repositorio localmente, puedes clonarlo usando Git. Abr
 
 ```bash
 git clone https://github.com/AlbertApaza/COACH_NOSQL.git
-
+```
 # Comenzando
 
 ## Paso 1: Requisitos del Sistema
