@@ -62,16 +62,18 @@ Visita la [Página Oficial de CouchDB](https://couchdb.apache.org/#download) y e
 ## Paso 3: Instalación (Windows)
 
 Cuando ejecutes el instalador de CouchDB, la parte más importante es cuando se te pida crear un usuario y una contraseña. Asegúrate de validar las credenciales que ingresas antes de continuar con la instalación, ya que las necesitarás para acceder a la interfaz de administración de CouchDB.
+![Crear Usuario y Contraseña](assets/1.png)
 
 ## Paso 4: Verificar Servicios CouchDB (Windows)
 
 Abre la aplicación Servicios buscando "Servicios" en el menú de inicio. Busca "Apache CouchDB" en la lista y verifica su estado. Debería decir "En ejecución".
+![Crear Usuario y Contraseña](assets/2.png)
 
 ## Paso 5: Probar CouchDB (Windows)
 
 Abre un navegador web y ve a: http://127.0.0.1:5984/
 
-
+![Crear Usuario y Contraseña](assets/3.png)
 Deberías ver una respuesta JSON similar a esta:
 
 ```json
@@ -96,7 +98,7 @@ Deberías ver una respuesta JSON similar a esta:
 
 ## Paso 6: Crear Base de Datos
 
-
+![Crear Usuario y Contraseña](assets/4.png)
 ## Paso 7: Crear la Estructura del Proyecto
 
 ### Estructura del Directorio del Proyecto
@@ -157,3 +159,5 @@ function get_all_users_tasks() {
     $url = "http://" . COUCHDB_HOST . ":" . COUCHDB_PORT . "/" . COUCHDB_DB . "/_all_docs?include_docs=true";
     return couchdb_request('GET', $url);
 }
+### resultado
+![Crear Usuario y Contraseña](assets/5.png)
